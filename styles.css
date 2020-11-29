@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+/*body things*/
+
+body {
+  border: 10px solid black;
+  margin: 0;
+  padding: 1%;
+  background-color: rgb(185, 250, 227);
+}
+
+/*Heading*/
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  color: blue;
+  margin-bottom: 70px;
+}
+
+/*row box*/
+
+.row {
+  background-color: lightgreen;
+  border: 1px solid black;
+  width: 100%;
+  height: 650px;
+  padding: 2%;
+}
+
+/*three big boxes universal*/
+
+.bigbox {
+  border: 1px solid black;
+  width: 32%;
+}
+
+/*box 1,2,3*/
+
+.box1 {
+  background-color: lightsalmon;
+  float: left;
+}
+
+.box2 {
+  background-color: lightslategray;
+  float: left;
+  margin-left: 2%;
+}
+
+.box3 {
+  background-color: lightskyblue;
+  float: right;
+}
+
+/*paragraf inside boxes 1,2,3*/
+
+.paragraf {
+  padding: 10px;
+  padding-top: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*small boxes universal*/
+
+.smallbox1 {
+  border: 1px solid black;
+  width: 40%;
+  text-align: center;
+  font-size: 1.25rem;
+  float: right;
+  overflow: hidden;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*menu names pork, beef, fish*/
+
+.pork {
+  background-color: lime;
+}
+
+.beef {
+  background-color: yellow;
+}
+
+.fish {
+  background-color: steelblue;
+}
+
+/*media query*/
+
+/*tablets*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .box1 {
+    width: 49%;
+    float: left;
+  }
+  .box2 {
+    width: 49%;
+    float: left;
+  }
+  .box3 {
+    width: 100%;
+    float: left;
+    margin-top: 2%;
+  }
+}
+
+/*mobile phones*/
+
+@media (max-width: 767px) {
+  .box1 {
+    width: 98%;
+    float: left;
+    margin-bottom: 3%;
+  }
+  .box2 {
+    width: 98%;
+    float: left;
+    margin-bottom: 3%;
+    margin-left: 0;
+  }
+  .box3 {
+    width: 98%;
+    float: left;
+  }
+}
